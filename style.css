@@ -1,0 +1,326 @@
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background: linear-gradient(45deg,#ff4800, #ff6600, #ff3c00 );
+    padding:10px 20px;
+    box-shadow: -21px 35px 57px -6px rgba(0,0,0,0.64);
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: rgb(248, 190, 0);
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+.title {
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-style: italic;
+position:relative;
+top: 18px;
+font-size: 24px;
+color: blanchedalmond;
+
+}
+
+.logo {
+height: 60px;
+width: 60px;
+border: solid 2px black;
+border-radius: 50%;
+}
+
+.index {
+background-image: url("background.jpg");
+background-size: 2000px 3000px;
+}
+
+.job {
+  background: linear-gradient(45deg, #ffac05, #ff7e05,#ffac05 );
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 50px;
+margin-bottom: 70px;
+margin-right: 50px;
+margin-left: 50px;
+border: solid 1px;
+border-radius: 46px 0px 49px 0px;
+box-shadow: -18px 14px 21px 12px rgba(0,0,0,0.65);
+}
+
+.h1e {
+font-size: 45px;
+font-weight: bold;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+padding-left: 20px;
+}
+
+.h2e {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 20px;
+}
+
+.h3e {
+  font-size: 36px;
+font-weight: bold;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+padding-left: 20px;
+}
+
+.TextWarp {
+float: right;
+position: relative;
+top: 0px;
+padding-top: 8px;
+padding-right:20px;
+
+}
+
+.details {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 20px;
+color: teal;
+
+
+}
+
+.links {
+font-size: 50px;
+
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background: linear-gradient(45deg,#ff4800, #ff6600, #ff3c00);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+  margin-top: 150px;
+  box-shadow: -25px -30px 54px -9px rgba(0,0,0,0.79);
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+
+
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+  width: 30%;
+  border-radius: 50%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ff0000;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
